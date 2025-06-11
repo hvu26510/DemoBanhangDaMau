@@ -83,6 +83,7 @@
             btnThemHoaDon.TabIndex = 15;
             btnThemHoaDon.Text = "Thêm";
             btnThemHoaDon.UseVisualStyleBackColor = true;
+            btnThemHoaDon.Click += btnThemHoaDon_Click;
             // 
             // label1
             // 
@@ -195,6 +196,7 @@
             dgvSanPham.Name = "dgvSanPham";
             dgvSanPham.Size = new Size(909, 229);
             dgvSanPham.TabIndex = 0;
+            dgvSanPham.CellClick += dgvSanPham_CellClick;
             // 
             // panel4
             // 
@@ -252,6 +254,7 @@
             button1.TabIndex = 13;
             button1.Text = "Thanh toán";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // txtSoTienKhachDua
             // 
@@ -268,6 +271,8 @@
             cbbNhanVien.Name = "cbbNhanVien";
             cbbNhanVien.Size = new Size(213, 23);
             cbbNhanVien.TabIndex = 11;
+            cbbNhanVien.SelectedIndexChanged += cbbNhanVien_SelectedIndexChanged;
+            cbbNhanVien.SelectionChangeCommitted += cbbNhanVien_SelectionChangeCommitted;
             // 
             // cbbKhachHang
             // 
@@ -276,6 +281,8 @@
             cbbKhachHang.Name = "cbbKhachHang";
             cbbKhachHang.Size = new Size(213, 23);
             cbbKhachHang.TabIndex = 10;
+            cbbKhachHang.SelectedIndexChanged += cbbKhachHang_SelectedIndexChanged;
+            cbbKhachHang.SelectionChangeCommitted += cbbKhachHang_SelectionChangeCommitted;
             // 
             // label9
             // 
@@ -292,9 +299,9 @@
             lbTongTien.BackColor = Color.Transparent;
             lbTongTien.Location = new Point(93, 252);
             lbTongTien.Name = "lbTongTien";
-            lbTongTien.Size = new Size(100, 15);
+            lbTongTien.Size = new Size(13, 15);
             lbTongTien.TabIndex = 8;
-            lbTongTien.Text = "Hiển thị tổng tiền";
+            lbTongTien.Text = "0";
             // 
             // label7
             // 
